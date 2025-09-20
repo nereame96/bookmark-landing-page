@@ -12,33 +12,109 @@
     <link rel="shortcut icon" href="starter-code/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Barra navegacion -->
-    <nav class="navbar">
-        <div class="container">
-            <!--Poner button para modo movil responsive -->
+    <main class="main-container">
+        <!-- Barra navegacion -->
+        <nav class="navbar">
+        
+        <!--Poner button para modo movil responsive -->
             
-            <div class="collapse navbar-collapse" id="navbar-toggler">
               <a class="navbar-brand" href="#">
                   <img src="./starter-code/images/logo-bookmark.svg" alt="Icono de la web" width="150px">
               </a>
-              <ul class="navbar-nav ">
+              <ul class="navbar-links ">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
+                  <a class="nav-link" aria-label="Features" href="#">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PRICING</a>
+                  <a class="nav-link" aria-label="Pricing" href="#">PRICING</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
                 </li>
-                <li class="nav-item" id="nav-item-login">
-                  <a class="nav-link" href="#">LOGIN</a>
+                <li class="nav-item " id="nav-button-login">
+                  <a class="nav-link button-primary" aria-label="Login" href="#">LOGIN</a>
                 </li>
                 
               </ul>
-              
-            </div>
-          </div>
-    </nav>
+
+          
+        </nav>
+    
+    <section class="hero-section">
+        <div class="hero-text-container">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <ul class="hero-links">
+                <li><a class="button-primary blue-button" href="#">Get it on Chrome</a></li>
+                <li><a class="button-primary white-button" href="#">Get it on Firefox</a></li>
+            </ul>
+        </div>
+        <div class="hero-image-container">
+            <div class="hero-blue-shape"></div>
+            <img src="./starter-code/images/illustration-hero.svg" alt="Imagen dispositivo" class="hero-image"  >
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+
+        <!-- Tab links -->
+<div class="tab-features-section">
+    <button class="tablinks" onclick="openCity(event, 'London')">Simple Bookmarking</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Speedy Searching</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Easy Sharing</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="tab1" class="tabcontent">
+    <h2>Bookmark in one click</h2>
+    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+    <a href="#">More info</a>
+  </div>
+  
+  <div id="tab2" class="tabcontent">
+    <h2>Intelligent search</h2>
+    <p>Our powerful search feature will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.</p>
+    <a href="#">More info</a>
+  </div>
+  
+  <div id="tab3" class="tabcontent">
+    <h2>Share your bookmarks</h2>
+    <p>Easy share your bookmarks and collections with other. Create a shareable link that you can send at the click of a button.</p>
+    <a href="#">More info</a>
+  </div>
+    </section>
+    <section class="browser-section">
+        <h2>Download the extension</h2>
+        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 6.2</p>
+        <a href="#">Add & Install Extension </a>
+        <h3>Add to Firefox</h3>
+        <p>Minimum version 5.5</p>
+        <a href="#">Add & Install Extension </a>
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 4.4</p>
+        <a href="#">Add & Install Extension </a>
+
+        
+    </section>
+    <section class="questions-section">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        
+        <label for="details1">What is Bookmark?</label>
+        <details id="details1">
+            <summary>Haz clic para ver el contenido</summary>
+            <p>Este es el contenido que se muestra cuando haces clic.</p>
+        </details>
+    </section>
+        
+    
+    <footer></footer>
+    </main>
 </body>
 </html>
