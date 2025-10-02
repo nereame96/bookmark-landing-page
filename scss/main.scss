@@ -1,0 +1,19 @@
+// 1. BASE y UTILIDADES
+@use 'base/variables';  
+@use 'base/reset';
+@use 'base/base';
+@use 'base/typography';
+
+// 2. LAYOUT (Estructura)
+@use 'layout/main-container';
+
+// 3. SECCIONES (Grandes bloques)
+@use 'sections/nav';
+@use 'sections/hero';
+@use 'sections/contact';
+@use 'sections/footer';
+
+// 4. COMPONENTES (Pequeños bloques reutilizables)
+@use 'components/buttons';
+@use 'components/tabs';
+@use 'components/browser-box';
