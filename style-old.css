@@ -121,6 +121,7 @@ img {
     list-style: none;
 
     transition: .5s transform;
+    z-index: 3;
     
 }
 
@@ -143,24 +144,6 @@ img {
 }
 
 
-
-
-/*
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    
-}
-
-.navbar-links {
-    display: flex;
-    gap: 2.7rem;
-    list-style: none;
-    
-}
-*/
 .navbar-links li a {
     font-size: 1.5rem;
     color: white;
@@ -264,24 +247,21 @@ img {
 .hero-blue-shape {
     position: absolute; /* Allows for precise positioning */
     background-color: var(--color-blue);
-    width: 100%; /* Adjust the size as needed */
-    height: 100%; /* Adjust the size as needed */
+    width: 85%; 
+    height: 85%; 
     max-height: 400px;
-    bottom: -15%; /* Moves the shape down */
-    right: -10%; /* Aligns the shape to the right */
+    bottom: 0; 
+    right: 0; 
+    transform: translateX(20%);
     
-    
-    border-top-left-radius: 40%; 
-    border-bottom-left-radius: 40%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 100px 0 0 100px;
 
-    z-index: -1; 
+    z-index: 1; 
 }
 
 .hero-image {
     position: relative;
-    z-index: 1; 
+    z-index: 2; 
     max-width: 100%;
     height: auto;
     
