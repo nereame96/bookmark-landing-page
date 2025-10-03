@@ -1,5 +1,5 @@
 // 1. BASE y UTILIDADES
-@use 'base/variables' as *;  
+@import 'base/variables';
 @use 'base/reset';
 @use 'base/base';
 @use 'base/typography';
