@@ -1,13 +1,14 @@
 
-
+/* RESET
 *,
 ::after,
 ::before {
     margin: 0;
     box-sizing: border-box;
 }
+*/
 
-
+/*  BASE
 html {
     font-size: 62,5%;
 }
@@ -19,6 +20,9 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
 }
+    */
+
+/* BUTTON
 
 .button-primary {
     border: none ;
@@ -26,11 +30,14 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition-duration: 0.3s;
     font-size: 0.9rem;
-    /* font-size: clamp(0.9rem, 0.5rem + 1vw, 1.2rem);  MEJOR NO PONER, TEXT OVERFLOW*/
+   
     text-decoration: none;
     padding: 1rem;
 }
 
+*/
+
+/* TYPOGRAPHY 
 
 
 h2 {
@@ -53,9 +60,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+*/
 
 
 /* Variables */
+
+/* VARIABLES 
 
 :root {
     --color-black: #252C4D;
@@ -63,17 +73,22 @@ img {
     --color-blue: #5267df;
     
 }
+*/
 
 /* Main */
+
+/* MAIN-CONTAINER
 
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-}
+} */
 
 /* Barra navegacion */
+
+/* NAV
 
 .navbar {
    width: min(90%, 1200px);
@@ -153,8 +168,9 @@ img {
 
 .navbar-links li a:hover {
     color: tomato;
-}
+} */
 
+/* BUTTONS
 .red-button {
     color: white;
     background-color: tomato;
@@ -175,9 +191,12 @@ img {
     border: 2px solid tomato;
 }
 
+*/
 
 
 /* Hero Section */
+
+/* HERO
 
 .hero-section {
     margin-right: 0;
@@ -204,7 +223,9 @@ img {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-}
+} */
+
+/* BUTTONS
 
 .blue-button {
     background-color: var(--color-blue);
@@ -219,7 +240,7 @@ img {
 }
 
 /* Hover botones Blue & White */
-
+/*  
 .blue-button:hover {
     color: var(--color-blue);
     background-color: white;
@@ -232,9 +253,12 @@ img {
     border: 2px solid var(--color-black);
 }
 
+*/
 
 
 /* --Hero Image */
+
+/* HERO
 
 .hero-image-container {
     height: 51vh;
@@ -245,7 +269,7 @@ img {
 }
 
 .hero-blue-shape {
-    position: absolute; /* Allows for precise positioning */
+    position: absolute; 
     background-color: var(--color-blue);
     width: 85%; 
     height: 85%; 
@@ -265,10 +289,11 @@ img {
     max-width: 100%;
     height: auto;
     
-}
+} */
 
 /* Secondary section centrada */
 
+/* SECONDARY SECTION
 .secondary-section {
     display: flex;
     padding: 2rem;
@@ -283,9 +308,12 @@ img {
     max-width: 500px; 
     margin: 1rem auto; 
     text-align: center; 
-}
+} */
 
 /* Features Section */
+
+
+/*  TABSS
 
 .features-text-container {
     border-bottom: 1px solid #a2a2a6c2;
@@ -295,7 +323,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 470px; /* Limita el ancho del párrafo */
+    max-width: 470px; Limita el ancho del párrafo
     text-align: center;
     margin: 0 auto;
     padding: 1rem 0;
@@ -351,21 +379,22 @@ img {
     text-align: center;
   }
 
-  
+   */
 
   /* Browser section */
 
+/* BROWSER
 
-
-  .browser-box-container {
+.browser-box-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las cajas en el contenedor */
-    gap: 2rem; /* Añade un espacio entre las cajas */
+    justify-content: center; 
+    gap: 2rem; 
     margin-top: 3rem;
 }
 
 /* El CSS para .browser-box ya está bien para su contenido interno */
+/*  
 .browser-box {
     width: 100%;
     display: flex;
@@ -378,32 +407,33 @@ img {
     
     text-align: center;
 }
-  
-  .browser-image {
+
+.browser-image {
     max-width: 90%; 
     margin-bottom: 1rem;
-  }
-  
-  .dots-image {
+}
+
+.dots-image {
     max-width: 70%;
     margin-bottom: 0.7rem;
-  }
-  
-  .browser-box p {
+}
+
+.browser-box p {
     margin-top: 0;
     font-size: 0.9rem;
   }
 
   .browser-link-container {
     margin: 2rem auto;
-  }
+}
 
 
+*/
 
 
 /* FAQ Section */
 
-
+/* FAQ
 
 details {
     padding: 0.5rem; 
@@ -454,10 +484,12 @@ details[open] > summary::after{
     align-items: flex-start;
     text-align: left;
 }
-
+ */
 
 
 /* Contact Section */
+
+/* CONTACT
 
 .contact-section {
     color: white;
@@ -485,9 +517,11 @@ details[open] > summary::after{
 
 .contact-section button {
     margin: 0.5rem auto;
-}
+} */
 
 /* Footer */
+
+/* FOOTER
 
 footer {
     background-color: var(--color-black);
@@ -522,7 +556,7 @@ footer img {
 }
 .footer-image {
     width: 170px;
-}
+} */
 
 
 
@@ -535,6 +569,8 @@ footer img {
 
 /* Max-width 1000px */
 
+/* FAQ 
+
 @media (min-width: 768px) {
 
     
@@ -545,11 +581,12 @@ footer img {
         }
 }
 
-
+*/
 
   
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
 
+    /* NAV
     .navbar{
         --transform-menu-show: translate(0);
     }
@@ -561,10 +598,10 @@ footer img {
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
-
+        
         transition: unset;
     }
-
+    
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -572,7 +609,7 @@ footer img {
         
         
     }
-
+    
     .navbar-links {
         display: flex;
         gap: 2.7rem;
@@ -580,17 +617,21 @@ footer img {
         background-color: white;
         align-items: center; 
     }
-
+    
     .navbar-links li a {
         font-size: 0.8rem;
         color: var(--color-black);
         text-decoration: none;
         padding: 0.5rem 1rem;
     }
-
+    
     .navbar-links li a:hover {
         color: tomato;
     }
+    */
+
+
+/*  BUTTON
 
     .red-button {
         color: white;
@@ -610,9 +651,11 @@ footer img {
         background-color: white;
         border: 2px solid tomato;
     }    
+     */
     
-    
-    
+
+/*     HERO
+
     .hero-section {
         display: flex;
         flex-direction: row;
@@ -637,11 +680,18 @@ footer img {
         display: flex;     
         justify-content: flex-start;
         
-        }
+        } */
+
+    
+    
+/* FEATURES 
 
     .features-text-container {
         border: none;
-    }
+    } */
+
+
+/*   TABS  
 
     .tab-features-section {
         display: flex;
@@ -706,15 +756,28 @@ footer img {
     justify-content: flex-start;
     margin-top: 2rem;
     
-    }
+    } */
+
+
+
+/* FAQ
 
 .faq-section {
     max-width: 50%;
-    }
+    } */
+
+
+
+/* CONTACT 
 
 .contact-container{
     max-width: 50%;
     }
+ */
+
+
+
+/* FOOTER
 
 .footer-container {
     width: min(90%, 1200px);
@@ -734,13 +797,10 @@ footer img {
     margin: 2rem auto;
     padding: 0 1rem;
     
-}
+} */
 
 
-
-
-
-}
+/* } */
 
 
 

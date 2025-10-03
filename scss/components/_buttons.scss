@@ -1,5 +1,7 @@
 // .button-primary, .blue-button, etc.
 
+// HACER MIXINS CON LOS BOTONES
+
 .button-primary {
     border: none ;
     border-radius: 7%;
@@ -55,4 +57,30 @@
     color: var(--color-black);
     background-color: white;
     border: 2px solid var(--color-black);
+}
+
+
+// MEDIA QUERIES
+
+@media (min-width: 1024px) {
+
+.red-button {
+    color: white;
+    background-color: tomato;
+    padding: 1rem 2.2rem;
+
+}
+
+.button-login {
+    color: white;
+    background-color: tomato;
+    padding: 1rem 2.2rem;
+}
+
+#nav-button-login a:hover {
+    color: tomato;
+    background-color: white;
+    border: 2px solid tomato;
+}    
+
 }
