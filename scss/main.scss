@@ -1,15 +1,18 @@
 // 1. BASE y UTILIDADES
-@use 'base/variables';  
+@use 'base/variables' as *;  
 @use 'base/reset';
 @use 'base/base';
 @use 'base/typography';
 
 // 2. LAYOUT (Estructura)
 @use 'layout/main-container';
+@use 'layout/secondary-section';
 
 // 3. SECCIONES (Grandes bloques)
 @use 'sections/nav';
 @use 'sections/hero';
+@use 'sections/features';
+@use 'sections/faq';
 @use 'sections/contact';
 @use 'sections/footer';
 

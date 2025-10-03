@@ -6,15 +6,17 @@ h2 {
     font-size: clamp(1.6rem, 0.765vw + 1.85rem, 2rem);
     margin: 0.5rem auto;
     padding: 0.5rem;
+
+    font-family: $font-primary;
 }
 
 p {
     color: var(--color-grey);
-    font-size: 1.1rem;
     font-size: clamp(1rem, 0.5rem + 1vw, 1.1rem);
     line-height: 1.6;
     margin: 0.5rem auto;
     padding: 0.5rem;
+    
 }
 
 img { 
