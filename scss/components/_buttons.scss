@@ -3,60 +3,37 @@
 // HACER MIXINS CON LOS BOTONES
 
 .button-primary {
-    border: none ;
-    border-radius: 7%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
-    font-size: 0.9rem;
-    /* font-size: clamp(0.9rem, 0.5rem + 1vw, 1.2rem);  MEJOR NO PONER, TEXT OVERFLOW*/
-    text-decoration: none;
-    padding: 1rem;
+    @include button-base;
 }
 
 .red-button {
-    color: white;
-    background-color: tomato;
-    padding: 1rem 2.2rem;
+    @include button-color(tomato, white, tomato);
+   
     
 }
 
-#nav-button-login {
-    color: white;
-    background-color: none;
-    padding: 1rem 2.2rem;
-    border: 1px solid white;
-}
-
-#nav-button-login a:hover {
-    color: tomato;
-    background-color: white;
-    border: 2px solid tomato;
-}
-
 .blue-button {
-    background-color: var(--color-blue);
-    color: white;
+    @include button-color ($color-blue, white );
     
 }
 
 .white-button {
-    background-color: #f0f1f4c6;
-    color: var(--color-black);
+    @include button-color ($color-button-grey, $color-black);
     
 }
 
-/* Hover botones Blue & White */
+// BURGER NAV
 
-.blue-button:hover {
-    color: var(--color-blue);
-    background-color: white;
-    border: 2px solid var(--color-blue);
-}
+#nav-button-login {
+    color: white;
+    background-color: transparent;
+    padding: 1rem 2.2rem;
+    border: 1px solid white;
 
-.white-button:hover {
-    color: var(--color-black);
-    background-color: white;
-    border: 2px solid var(--color-black);
+    &:hover {
+        color: tomato;
+        border: 2px solid tomato;
+    }
 }
 
 
@@ -64,23 +41,20 @@
 
 @media (min-width: 1024px) {
 
-.red-button {
-    color: white;
-    background-color: tomato;
-    padding: 1rem 2.2rem;
 
+    .red-button,
+    .button-login,
+    #nav-button-login { 
+        padding: 1rem 2.2rem;
+    }
+
+    #nav-button-login { 
+        @include button-base;
+        @include button-color (tomato, white, tomato);
+    }
 }
 
-.button-login {
-    color: white;
-    background-color: tomato;
-    padding: 1rem 2.2rem;
-}
 
-#nav-button-login a:hover {
-    color: tomato;
-    background-color: white;
-    border: 2px solid tomato;
-}    
-
-}
+// <li class="nav-item " id="nav-button-login">
+//      <a class="nav-link button-primary button-login" aria-label="Login" href="#">LOGIN</a>
+//  </li>

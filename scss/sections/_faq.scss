@@ -6,38 +6,43 @@ details {
     width: 100%;
     margin: 0 auto;
     
-  }
-summary {
-    color: var(--color-black);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0 auto;
-    padding: 0.5rem;
-    list-style: none; 
-    position: relative;
-    cursor: pointer;
-    padding-right: 2rem;
-}
+  
+    summary {
+        color: $color-black;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0 auto;
+        padding: 0.5rem;
+        list-style: none; 
+        position: relative;
+        cursor: pointer;
+        padding-right: 2rem;
 
-summary::marker {
-    content: ''; 
-}
-summary::-webkit-details-marker {
-    display: none; 
-}
+        &::marker {
+            content: ''; 
+        }
 
-summary::after {
-    content: url(./starter-code/images/icon-arrow.svg);
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+        &::-webkit-details-marker {
+            display: none; 
+        }
 
-}
+        &::after {
+            content: url(../../starter-code/images/icon-arrow.svg);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
-details[open] > summary::after{
-    content: url(./starter-code/images/icon-arrow-red.svg);
-    transform: rotate(180deg);
+        
+    }
+
+    &[open] > summary::after{
+        content: url(../../starter-code/images/icon-arrow-red.svg);
+        transform: rotate(180deg);
+        
+    }
+
     
 }
 
@@ -59,10 +64,3 @@ details[open] > summary::after{
         }
 }
 
-@media (min-width: 1024px) {
-    
-    .faq-section {
-        max-width: 50%;
-        }
-
-}

@@ -7,7 +7,7 @@
     <title>Bookmark</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="starter-code/images/favicon-32x32.png" type="image/x-icon">
 </head>
@@ -36,8 +36,8 @@
                 <li class="nav-item">
                   <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
                 </li>
-                <li class="nav-item " id="nav-button-login">
-                  <a class="nav-link button-primary button-login" aria-label="Login" href="#">LOGIN</a>
+                <li class="nav-item " >
+                  <a class="nav-link " id="nav-button-login" aria-label="Login" href="#">LOGIN</a>
                 </li>
                 
               </ul>
@@ -52,8 +52,8 @@
                 <h1>A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="hero-links">
-                    <a class="button-primary blue-button" href="#">Get it on Chrome</a>
-                    <a class="button-primary white-button" href="#">Get it on Firefox</a>
+                    <a class="button-primary blue-button" href="#" aria-label="Descargar extensión en Chrome" >Get it on Chrome</a>
+                    <a class="button-primary white-button" href="#"aria-label="Descargar extensión en Firefox" >Get it on Firefox</a>
                 </div>
             </div>
             <div class="hero-image-container">
@@ -70,10 +70,10 @@
             </div>
 
             <!-- Tab links -->
-            <div class="tab-features-section">
-                <button class="tablinks active" onclick="showTab(event, 'tab1')">Simple Bookmarking</button>
-                <button class="tablinks" onclick="showTab(event, 'tab2')">Speedy Searching</button>
-                <button class="tablinks" onclick="showTab(event, 'tab3')">Easy Sharing</button>
+            <div class="tab-features-section" aria-label="Características del gestor de marcadores">
+                <button class="tablinks active" onclick="showTab(event, 'tab1')" aria-label="Mostrar sección de Marcado Simple" >Simple Bookmarking</button>
+                <button class="tablinks" onclick="showTab(event, 'tab2')" aria-label="Mostrar sección de Búsqueda Rápida" >Speedy Searching</button>
+                <button class="tablinks" onclick="showTab(event, 'tab3')" aria-label="Mostrar sección de Compartir Fácil" >Easy Sharing</button>
             </div>
     
             <!-- Tab content -->

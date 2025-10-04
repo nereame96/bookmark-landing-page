@@ -1,1 +1,14 @@
+
+// Color variables
+
+$color-black: #252C4D;
 $color-grey: #A2A2A6;
+$color-blue: #5267df;
+$color-border-features-grey: #a2a2a6c2;
+$color-button-grey: #f0f1f4c6;
+
+// Font variables
+
+$font-primary: "Montserrat", sans-serif;
+$font-size-p: clamp(1rem, 0.5rem + 1vw, 1.1rem);
+$font-size-h2: clamp(1.6rem, 0.765vw + 1.85rem, 2rem)

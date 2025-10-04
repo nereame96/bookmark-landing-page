@@ -2,16 +2,16 @@
 
 
 h2 {
-    // color: $color-black;
-    font-size: clamp(1.6rem, 0.765vw + 1.85rem, 2rem);
+    color: $color-black;
+    font-size: $font-size-h2;
     margin: 0.5rem auto;
     padding: 0.5rem;
 
 }
 
 p {
-     color: $color-grey;
-    font-size: clamp(1rem, 0.5rem + 1vw, 1.1rem);
+    color: $color-grey;
+    font-size: $font-size-p;
     line-height: 1.6;
     margin: 0.5rem auto;
     padding: 0.5rem;

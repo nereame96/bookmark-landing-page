@@ -1,22 +1,23 @@
 // 1. BASE y UTILIDADES
 @import 'base/variables';
-@use 'base/reset';
-@use 'base/base';
-@use 'base/typography';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
 
 // 2. LAYOUT (Estructura)
-@use 'layout/main-container';
-@use 'layout/secondary-section';
+@import 'layout/main-container';
+@import 'layout/secondary-section';
 
 // 3. SECCIONES (Grandes bloques)
-@use 'sections/nav';
-@use 'sections/hero';
-@use 'sections/features';
-@use 'sections/faq';
-@use 'sections/contact';
-@use 'sections/footer';
+@import 'sections/nav';
+@import 'sections/hero';
+@import 'sections/features';
+@import 'sections/faq';
+@import 'sections/contact';
+@import 'sections/footer';
 
 // 4. COMPONENTES (Pequeños bloques reutilizables)
-@use 'components/buttons';
-@use 'components/tabs';
-@use 'components/browser-box';
+@import 'components/mixins';
+@import 'components/buttons';
+@import 'components/tabs';
+@import 'components/browser-box';

@@ -1,16 +1,15 @@
 // .tablinks, .tab-features-section, etc.
 
 
-
-
 .tab-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     max-width: 470px; /* Limita el ancho del párrafo */
     text-align: center;
     margin: 0 auto;
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .tablinks {
@@ -32,29 +31,18 @@
     border-bottom:  1px solid #a2a2a6c2;
     width: 100%;
     max-width: 500px; 
-  }
-  
-  
-  .tablinks:hover {
-    color: tomato;
-  }
-  
-  
-  .tablinks.active {
-    border-bottom: 2px solid tomato;
-    color: var(--color-black);
-    
-  }
-  
- 
 
-  .tab-text-container {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
+      &:hover {
+        color: tomato;
+      }
+
+      &.active {
+        border-bottom: 2px solid tomato;
+        color: var(--color-black);
+      }
   }
+
+  
 
   .tab-link-container {
 
@@ -89,10 +77,12 @@
   max-width: 470px; 
   text-align: left;
   margin: 0 auto;
-  
+
+    h2 {
+      margin-left: 0;
+    }
 
 }
-
 
 .tablinks {
 
@@ -106,25 +96,11 @@
   
   }
 
-
-
-
 .tab-content-show {
 display: flex;
 flex-direction: row;
 gap: 3rem;
 
-}
-
-.tab-text-container {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-
-}
-
-.tab-text-container h2 {
-margin-left: 0;
 }
 
 .tab-link-container {
