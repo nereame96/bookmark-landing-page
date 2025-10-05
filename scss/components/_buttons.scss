@@ -1,25 +1,28 @@
 // .button-primary, .blue-button, etc.
 
-// HACER MIXINS CON LOS BOTONES
-
-.button-primary {
-    @include button-base;
-}
-
-.red-button {
-    @include button-color(tomato, white, tomato);
+.btn-primary,
+.btn-danger {
    
-    
+    transition: all 0.3s ease-in-out;
+    border-width: 2px; 
+
+    &:hover {
+        
+        background-color: transparent !important;
+        border-width: 2px; 
+    }
 }
 
-.blue-button {
-    @include button-color ($color-blue, white );
-    
+
+.btn-primary:hover {
+    color: $primary !important; 
+    border-color: $primary; 
 }
 
-.white-button {
-    @include button-color ($color-button-grey, $color-black);
-    
+
+.btn-danger:hover {
+    color: $danger !important; 
+    border-color: $danger; 
 }
 
 // BURGER NAV

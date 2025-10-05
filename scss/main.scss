@@ -4,11 +4,14 @@
 @import 'base/base';
 @import 'base/typography';
 
-// 2. LAYOUT (Estructura)
+// 2. BOOTSTRAP 
+@import "node_modules/bootstrap/scss/bootstrap"; 
+
+// 3. LAYOUT (Estructura)
 @import 'layout/main-container';
 @import 'layout/secondary-section';
 
-// 3. SECCIONES (Grandes bloques)
+// 4. SECCIONES (Grandes bloques)
 @import 'sections/nav';
 @import 'sections/hero';
 @import 'sections/features';
@@ -16,7 +19,7 @@
 @import 'sections/contact';
 @import 'sections/footer';
 
-// 4. COMPONENTES (Pequeños bloques reutilizables)
+// 5. COMPONENTES (Pequeños bloques reutilizables)
 @import 'components/mixins';
 @import 'components/buttons';
 @import 'components/tabs';
