@@ -1,0 +1,15 @@
+
+.features-text-container {
+    border-bottom: 1px solid $color-border-features-grey;
+}
+
+// MEDIA QUERIE
+
+
+@media (min-width: 1024px) {
+
+.features-text-container {
+    border: none;
+}
+
+}

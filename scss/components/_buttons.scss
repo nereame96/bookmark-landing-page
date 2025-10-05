@@ -1,0 +1,60 @@
+// .button-primary, .blue-button, etc.
+
+// HACER MIXINS CON LOS BOTONES
+
+.button-primary {
+    @include button-base;
+}
+
+.red-button {
+    @include button-color(tomato, white, tomato);
+   
+    
+}
+
+.blue-button {
+    @include button-color ($color-blue, white );
+    
+}
+
+.white-button {
+    @include button-color ($color-button-grey, $color-black);
+    
+}
+
+// BURGER NAV
+
+#nav-button-login {
+    color: white;
+    background-color: transparent;
+    padding: 1rem 2.2rem;
+    border: 1px solid white;
+
+    &:hover {
+        color: tomato;
+        border: 2px solid tomato;
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media (min-width: 1024px) {
+
+
+    .red-button,
+    .button-login,
+    #nav-button-login { 
+        padding: 1rem 2.2rem;
+    }
+
+    #nav-button-login { 
+        @include button-base;
+        @include button-color (tomato, white, tomato);
+    }
+}
+
+
+// <li class="nav-item " id="nav-button-login">
+//      <a class="nav-link button-primary button-login" aria-label="Login" href="#">LOGIN</a>
+//  </li>

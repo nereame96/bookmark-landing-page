@@ -1,0 +1,96 @@
+
+.hero-section {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem;
+
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 470px; 
+        margin: 0 auto;
+    
+        h1 {
+            color: var(--color-black);
+            font-size: clamp(2.1rem, 0.765vw + 1.85rem, 3rem);
+            margin: 3rem 0;
+        }
+
+        .hero-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .hero-image-container {
+        
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+
+        //  HACER UN COMPONENT DEL BLUE SHAPE??
+
+        .hero-blue-shape {  
+            position: absolute; 
+            background-color: $color-blue;
+            width: 85%; 
+            height: 85%; 
+            max-height: 400px;
+            bottom: 0; 
+            right: 0; 
+            transform: translateX(20%);
+            
+            border-radius: 100px 0 0 100px;
+
+            z-index: 1; 
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 2; 
+            max-width: 100%;
+            height: auto;
+            
+        }
+    }
+}
+
+
+
+
+// MEDIA QUERIE
+
+@media (min-width: 1024px) {
+
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 3.5rem auto;
+
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 470px; 
+        margin: 0 auto;
+        text-align: left;
+        
+        p {
+            padding-left: 0%;
+        }
+    
+        .hero-links {
+            display: flex;     
+            justify-content: flex-start;
+            
+            }
+            
+    }
+}
+
+}
