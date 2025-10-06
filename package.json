@@ -1,0 +1,23 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "Instrucciones en [briefing](/starter-code/briefing.md)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nereame96/bookmark-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nereame96/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/nereame96/bookmark-landing-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
