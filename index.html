@@ -15,36 +15,40 @@
 <body>
     
         <!-- Barra navegacion -->
-        <nav class="navbar">
-        
-        <!--Poner button para modo movil responsive -->
-            
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+
               <a class="navbar-brand" href="#">
-                  <img src="./starter-code/images/logo-bookmark.svg" alt="Web Icon" width="150px" class="nav-logo">
+                  <img src="./starter-code/images/logo-bookmark.svg" alt="Web Icon" width="150px">
               </a>
 
-              <label class="nav-toggle">
-                <input type="checkbox" id="menu-input" class="nav-input">
-              </label>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-              <ul class="navbar-links ">
-                <li class="nav-item">
-                  <a class="nav-link" aria-label="Features" href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-label="Pricing" href="#">PRICING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
-                </li>
+              <div class="collapse navbar-collapse" id="navbarNav">
+
+                  
+                  <ul class="navbar-nav ms-auto align-items-center">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-label="Features" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-label="Pricing" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
+                        </li>
                 <li class="nav-item " >
                     <!-- VER QUE HAGO CON EL BUTTON LOGIN, PASARLO A BTN BTN-PRIMARY COMO EL RESTO  -->
-                  <a class="nav-link " id="nav-button-login" aria-label="Login" href="#">LOGIN</a>
+                    <a class="nav-link btn btn-danger nav__login-btn" aria-label="Login" href="#">LOGIN</a>
                 </li>
                 
-              </ul>
-
-          
+            </ul>
+            
+                </div>
+            </div>
         </nav>
 
     <main class="main-container">
@@ -55,7 +59,7 @@
                 <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="hero-links">
                     <a class="btn btn-primary btn-primary" href="#" aria-label="Download Chrome extension" >Get it on Chrome</a>
-                    <a class="btn btn-primary btn-white" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
+                    <a class="btn btn-primary btn-light" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
                 </div>
             </div>
             <div class="hero-image-container">
@@ -71,15 +75,86 @@
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
 
-            <!-- Tab links -->
+            <ul class="nav nav-tabs justify-content-center border-0 mb-5" id="featuresTab" role="tablist">
+    
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true" aria-label="Show section Simple Bookmarking">Simple Bookmarking</button>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false" aria-label="Show section Speedy Searching">Speedy Searching</button>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false" aria-label="Show section Easy Sharing">Easy Sharing</button>
+                </li>
+                
+            </ul>
+            
+            <div class="tab-content" id="featuresTabContent">
+                
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab" tabindex="0">
+                    <div class="row align-items-center"> 
+                        
+                        <div class="col-lg-6">
+                            <div class="tab-image-container">
+                                <div class="features-blue-shape"></div>
+                                <img src="./starter-code/images/illustration-features-tab-1.svg" alt="Device image showing simple Bookmarking" class="img-fluid" >
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="tab-text-container">
+                                <h2>Bookmark in one click</h2>
+                                <p class="lead">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                <a class="btn btn-primary btn-primary" href="#" aria-label="More indoabout Bookmark in one click" >More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
+                    <div class="row align-items-center"> 
+                        
+                        <div class="col-lg-6">
+                            <div class="tab-image-container">
+                                <div class="features-blue-shape"></div>
+                                <img src="./starter-code/images/illustration-features-tab-2.svg" alt="Device image showing smart search feature" class="img-fluid" >
+                                
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="tab-text-container">
+                                <h2>Intelligent search</h2>
+                                <p class="lead">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                <a class="btn btn-primary btn-primary" href="#" aria-label="More indoabout Bookmark in one click" >More info</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    </div>
+                
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+                    </div>
+                
+            </div>
+
+            <!-- Tab links
+
+            
             <div class="tab-features-section" aria-label="Bookmark features>
                 <button class="tablinks active" onclick="showTab(event, 'tab1')" aria-label="Show section Simple Bookmarking" >Simple Bookmarking</button>
                 <button class="tablinks" onclick="showTab(event, 'tab2')" aria-label="Show section Speedy Searching" >Speedy Searching</button>
                 <button class="tablinks" onclick="showTab(event, 'tab3')" aria-label="Show section Easy Sharing" >Easy Sharing</button>
             </div>
     
-            <!-- Tab content -->
-            <div id="tab1" class="tab-content">
+            Tab content -->
+            <!-- <div id="tab1" class="tab-content">
                 <div class="tab-content-show">
                     <div class="tab-image-container">
                         <div class="features-blue-shape"></div>
@@ -133,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
@@ -143,44 +218,48 @@
                 <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
 
-            <div class="browser-box-container">
-                <div class="browser-box  browser-box1">
-                    <div class="browser-image-container">
-                        <img class="browser-image" src="./starter-code/images/logo-chrome.svg" alt="Image Logo Chrome" >
-                    </div>
-                    <h3>Add to Chrome</h3>
-                    <p>Minimum version 6.2</p>
-                    <div class="dots-image-container">
-                        <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                    </div>
-                    <div class="browser-link-container">
-                        <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Chrome">Add & Install Extension </a>
-                    </div>
-                </div>
-                <div class="browser-box  browser-box2">
-                    <div class="browser-image-container">
-                        <img class="browser-image" src="./starter-code/images/logo-firefox.svg" alt="Imagen Logo Firefox" >
-                    </div>
-                    <h3>Add to Firefox</h3>
-                    <p>Minimum version 5.5</p>
-                    <div class="dots-image-container">
-                        <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                    </div>
-                    <div class="browser-link-container">
-                        <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Firefox">Add & Install Extension </a>
+            <div class="row justify-content-center g-4 align-items-start">
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card shadow-lg flex-fill browser-box browser-box1">
+                        <div class="card-body text-center">
+                            <img class="browser-image" src="./starter-code/images/logo-chrome.svg" alt="Image Logo Chrome" >
+                            <h3 class="card-title">Add to Chrome</h3>
+                            <p class="card-text">Minimum version 6.2</p>
+
+                            <img class="dots-image car-img-center" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                            
+                            <a class=" btn btn-primary btn-primary" href="#" aria-label="Add and Install for Chrome">Add & Install Extension </a>
+
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="browser-box  browser-box3">
-                    <div class="browser-image-container">
-                        <img class="browser-image" src="./starter-code/images/logo-opera.svg" alt="Imagen Logo Opera">
+                <div class="col-md-6 col-lg-4 mt-lg-5 d-flex">
+                    <div class="card shadow-lg flex-fill browser-box browser-box2">
+                        <div class="card-body text-center">
+                            <img class="browser-image" src="./starter-code/images/logo-firefox.svg" alt="Imagen Logo Firefox" >
+                            <h3 class="card-title">Add to Firefox</h3>
+                            <p class="card-text">Minimum version 5.5</p>
+                            
+                            <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                            
+                            <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Firefox">Add & Install Extension </a>
+                        
+                        </div>
                     </div>
-                    <h3>Add to Opera</h3>
-                    <p>Minimum version 4.6</p>
-                    <div class="dots-image-container">
-                        <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                    </div>
-                    <div class="browser-link-container">
-                        <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Opera">Add & Install Extension </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-lg-5 pt-lg-4 d-flex">
+                    <div class="card shadow-lg flex-fill browser-box browser-box3">
+                        <div class="card-body text-center">
+                            <img class="browser-image" src="./starter-code/images/logo-opera.svg" alt="Imagen Logo Opera">
+                            <h3 class="card-title">Add to Opera</h3>
+                            <p class="card-text">Minimum version 4.6</p>
+                            
+                            <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                            
+                            <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Opera">Add & Install Extension </a>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,7 +349,11 @@
     </footer>
     
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script> 
 
 </body>
 

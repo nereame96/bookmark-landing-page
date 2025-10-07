@@ -1,62 +1,51 @@
 // .button-primary, .blue-button, etc.
 
 .btn-primary,
-.btn-danger {
+.btn-danger,
+.btn-light {
    
     transition: 0.3s;
-    border-width: 2px; 
+   
     
 
     &:hover {
         
-        background-color: white !important;
+        background-color: white;
         border-width: 2px; 
     }
 }
 
 .btn-danger {
-    color: white !important;
+    color: white;
 }
 
-
 .btn-primary:hover {
-    color: $primary !important; 
-    border-color: $primary !important; 
+    color: $primary; 
+    border-color: $primary; 
 }
 
 
 .btn-danger:hover {
-    color: $danger !important; 
-    border-color: $danger !important; 
+    color: $danger; 
+    border-color: $danger; 
 }
 
-.btn-white {
-    color: $secondary !important; 
-    border: 2px solid transparent; 
-    background-color: $color-button-grey !important; 
-    transition: 0.3s;
-    
-    &:hover {
-        color: $secondary !important; 
-        background-color: white !important; 
-        border-color: $secondary !important; 
-        
-        border-style: solid !important;
-        border-width: 2px !important;
-    }
+.btn-light:hover  {
+    color: $secondary ; 
+    border-color: $secondary; 
 }
 
 // BURGER NAV
 
-#nav-button-login {
+.nav__login-btn {
     color: white;
-    background-color: transparent;
+    background-color: $danger;
     padding: 1rem 2.2rem;
     border: 1px solid white;
 
     &:hover {
-        color: tomato;
-        border: 2px solid tomato;
+        color: $danger;
+        border: 2px solid $danger ;
     }
 }
 
