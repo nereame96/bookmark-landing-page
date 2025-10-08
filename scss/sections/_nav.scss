@@ -1,5 +1,5 @@
 
-
+// OKK PERO REPASAR
 
  .navbar-nav .nav-link {
     color: $color-black; 
@@ -14,7 +14,7 @@
 
 .navbar-collapse {
     
-    @media (max-width: 991.98px) { 
+    @media (max-width: 991px) { 
        
         background-color: rgba(37, 44, 77, 0.95); 
         
@@ -28,7 +28,7 @@
 
 .navbar-nav {
     
-    @media (max-width: 991.98px) { 
+    @media (max-width: 991px) { 
         width: 100%;
         text-align: center;
         padding-top: 1rem;
@@ -37,7 +37,7 @@
 
 .navbar-nav .nav-link {
     
-    @media (max-width: 991.98px) { 
+    @media (max-width: 991px) { 
         color: white !important;
         font-size: 1.5rem; 
         padding: 1rem 0;

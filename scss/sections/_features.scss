@@ -1,15 +1,27 @@
 
-.features-text-container {
-    border-bottom: 1px solid $color-border-features-grey;
+// OKK PERO REPASAR
+
+.nav-tabs {
+    border-bottom: none;
+    
 }
 
-// MEDIA QUERIE
-
-
-@media (min-width: 1024px) {
-
-.features-text-container {
+.nav-tabs .nav-link {
+    color: $color-black; 
     border: none;
+    border-bottom: 1px solid $color-border-features-grey;
+    padding: 1.25rem 2rem;
+    
+    &:hover {
+        border-color: transparent;
+        color: $color-red; 
+    }
 }
 
+.nav-tabs .nav-link.active {
+    color: $color-black; 
+    border-color: transparent; 
+    background-color: transparent; 
+    
+    border-bottom: 4px solid $color-red; 
 }

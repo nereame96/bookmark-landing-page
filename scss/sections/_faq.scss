@@ -1,66 +1,45 @@
 
+// OKK PERO REPASAR
 
-details {
-    padding: 0.5rem; 
-    border-bottom: 1px solid #a2a2a693;
-    width: 100%;
-    margin: 0 auto;
+.accordion-item {
     
-  
-    summary {
-        color: $color-black;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin: 0 auto;
-        padding: 0.5rem;
-        list-style: none; 
-        position: relative;
-        cursor: pointer;
-        padding-right: 2rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
 
-        &::marker {
-            content: ''; 
-        }
 
-        &::-webkit-details-marker {
-            display: none; 
-        }
-
-        &::after {
-            content: url(../../starter-code/images/icon-arrow.svg);
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        
-    }
-
-    &[open] > summary::after{
-        content: url(../../starter-code/images/icon-arrow-red.svg);
-        transform: rotate(180deg);
-        
-    }
-
-    
 }
 
-.faq-list-container {
-    margin: 2rem auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.accordion-body {
     text-align: left;
 }
 
-// MEDIA QUERIES
+.accordion-button {
+    
+    font-weight: 500;
+    color: $color-black; 
+    background-color: white; 
+    
+    &:focus {
+        box-shadow: none; 
+    }
+    
+    &:hover {
+        color: $color-red; 
+    }
+}
 
-@media (min-width: 768px) {
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
 
-    .faq-section {
-        max-width: 50%;
-        }
+
+.accordion-button:not(.collapsed)::after {
+    
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa5757'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button::after {
+    
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235267df'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 

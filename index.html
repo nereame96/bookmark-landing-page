@@ -17,7 +17,7 @@
         <!-- Barra navegacion -->
         <nav class="navbar navbar-expand-lg">
 
-            <div class="container-fluid">
+            <div class="container my-5 px-5" >
 
               <a class="navbar-brand" href="#">
                   <img src="./starter-code/images/logo-bookmark.svg" alt="Web Icon" width="150px">
@@ -31,21 +31,21 @@
 
                   
                   <ul class="navbar-nav ms-auto align-items-center">
-                      <li class="nav-item">
+                      <li class="nav-item me-4">
                           <a class="nav-link" aria-label="Features" href="#">FEATURES</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-4">
                             <a class="nav-link" aria-label="Pricing" href="#">PRICING</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-4">
                             <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
                         </li>
-                <li class="nav-item " >
-                    <!-- VER QUE HAGO CON EL BUTTON LOGIN, PASARLO A BTN BTN-PRIMARY COMO EL RESTO  -->
-                    <a class="nav-link btn btn-danger nav__login-btn" aria-label="Login" href="#">LOGIN</a>
-                </li>
+                        <li class="nav-item " >
+                            <!-- VER QUE HAGO CON EL BUTTON LOGIN, PASARLO A BTN BTN-PRIMARY COMO EL RESTO  -->
+                            <a class=" btn btn-danger " aria-label="Login" href="#">LOGIN</a>
+                        </li>
                 
-            </ul>
+                    </ul>
             
                 </div>
             </div>
@@ -54,22 +54,27 @@
     <main class="main-container">
     
         <section class="hero-section">
-            <div class="hero-text-container secondary-text-container">
-                <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                <div class="hero-links">
-                    <a class="btn btn-primary btn-primary" href="#" aria-label="Download Chrome extension" >Get it on Chrome</a>
-                    <a class="btn btn-primary btn-light" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <div class="hero-blue-shape"></div>
-                <img src="./starter-code/images/illustration-hero.svg" alt="Device picture" class="hero-image"  >
+            <div class="container" >
+                <div class="row align-items-center py-5 flex-column-reverse flex-lg-row">
 
+                    <div class="hero-text-container secondary-text-container text-center text-lg-start col-lg-5 pe-lg-5">
+                        <h1>A Simple Bookmark Manager</h1>
+                        <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                        <div class="hero-links">
+                            <a class="btn btn-primary btn-primary" href="#" aria-label="Download Chrome extension" >Get it on Chrome</a>
+                            <a class="btn btn-primary btn-light" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-container col-lg-7 mt-6 mt-lg-0 position-relative">
+                        <div class="hero-blue-shape"></div>
+                        <img src="./starter-code/images/illustration-hero.svg" alt="Device picture" class="hero-image"  >
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="features-section secondary-section">
+        <section class="features-section secondary-section d-flex flex-column align-items-center py-5 my-5">
             <div class="features-text-container secondary-text-container">
                 <h2>Features</h2>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
@@ -96,7 +101,7 @@
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab" tabindex="0">
                     <div class="row align-items-center"> 
                         
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 ">
                             <div class="tab-image-container">
                                 <div class="features-blue-shape"></div>
                                 <img src="./starter-code/images/illustration-features-tab-1.svg" alt="Device image showing simple Bookmarking" class="img-fluid" >
@@ -106,8 +111,12 @@
                         <div class="col-lg-6 mt-5 mt-lg-0">
                             <div class="tab-text-container">
                                 <h2>Bookmark in one click</h2>
-                                <p class="lead">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                                <a class="btn btn-primary btn-primary" href="#" aria-label="More indoabout Bookmark in one click" >More info</a>
+                                <p >Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                                <div class="text-center text-lg-start mt-4">
+                                    <a class="btn btn-primary btn-primary" href="#" aria-label="More info about Bookmark in one click" >More info</a>
+
+                                </div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -127,99 +136,54 @@
                         <div class="col-lg-6 mt-5 mt-lg-0">
                             <div class="tab-text-container">
                                 <h2>Intelligent search</h2>
-                                <p class="lead">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                                <a class="btn btn-primary btn-primary" href="#" aria-label="More indoabout Bookmark in one click" >More info</a>
+                                <p>Our powerful search feature will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.</p>
+                                <div class="text-center text-lg-start mt-4">
+                                    <a class="btn btn-primary btn-primary" href="#" aria-label="More info about smart Searching" >More info</a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
-
-
-
-                    </div>
+                </div>
                 
                 <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+
+                    <div class="row align-items-center"> 
+                        
+                        <div class="col-lg-6">
+                            <div class="tab-image-container">
+                                <div class="features-blue-shape"></div>
+                                <img src="./starter-code/images/illustration-features-tab-3.svg" alt="Device image showing the bookmark sharing functionality" class="img-fluid" >
+                                
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="tab-text-container">
+                                <h2>Share your bookmarks</h2>
+                                <p>Easy share your bookmarks and collections with other. Create a shareable link that you can send at the click of a button.</p>
+                                <a class="btn btn-primary btn-primary" href="#" aria-label="Learn more about sharing bookmarks" >More info</a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 
             </div>
 
-            <!-- Tab links
-
             
-            <div class="tab-features-section" aria-label="Bookmark features>
-                <button class="tablinks active" onclick="showTab(event, 'tab1')" aria-label="Show section Simple Bookmarking" >Simple Bookmarking</button>
-                <button class="tablinks" onclick="showTab(event, 'tab2')" aria-label="Show section Speedy Searching" >Speedy Searching</button>
-                <button class="tablinks" onclick="showTab(event, 'tab3')" aria-label="Show section Easy Sharing" >Easy Sharing</button>
-            </div>
-    
-            Tab content -->
-            <!-- <div id="tab1" class="tab-content">
-                <div class="tab-content-show">
-                    <div class="tab-image-container">
-                        <div class="features-blue-shape"></div>
-                        <img src="./starter-code/images/illustration-features-tab-1.svg" alt="IDevice image showing simple Bookmarking" class="features-image"  >
-                        
-                    </div>  
-                    <div class="tab-text-container">
-                        <h2>Bookmark in one click</h2>
-                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                        <div class="tab-link-container">
-                            <a class="btn btn-primary btn-primary" href="#" aria-label="More indoabout Bookmark in one click" >More info</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="tab2" class="tab-content">
-                <div class="tab-content-show">
-
-                    <div class="tab-image-container">
-                        <div class="features-blue-shape"></div>
-                        <img src="./starter-code/images/illustration-features-tab-2.svg" alt="Device image showing smart search feature" class="features-image"  >
-                        
-                    </div>
-                    <div class="tab-text-container">
-                        <h2>Intelligent search</h2>
-                        <p>Our powerful search feature will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.</p>
-                        <div class="tab-link-container">
-                            <a class=" btn btn-primary btn-primary" href="#" aria-label="More info about smart Searching">More info</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="tab3" class="tab-content">
-                <div class="tab-content-show">
-
-                    <div class="tab-image-container">
-                        <div class="features-blue-shape"></div>
-                    <img src="./starter-code/images/illustration-features-tab-3.svg" alt="Device image showing the bookmark sharing functionality" class="features-image"  >
-                    
-                    </div>
-                    <div class="tab-text-container">
-                        <h2>Share your bookmarks</h2>
-                        <p>Easy share your bookmarks and collections with other. Create a shareable link that you can send at the click of a button.</p>
-                        <div class="tab-link-container">
-                            <a class="btn btn-primary btn-primary" href="#" aria-label="Learn more about sharing bookmarks">More info</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </section>
 
 
-        <section class="browser-section secondary-section">
-            <div class="secondary-text-container">
+        <section class="browser-section secondary-section d-flex flex-column align-items-center py-5 my-5">
+            <div class="secondary-text-container mx-auto">
                 <h2>Download the extension</h2>
                 <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
 
-            <div class="row justify-content-center g-4 align-items-start">
-                <div class="col-md-6 col-lg-4 d-flex">
+            <div class="row justify-content-center g-3 px-md-2 align-items-start flex-column flex-lg-row">
+                <div class="col-md-5 col-lg-4 d-flex">
                     <div class="card shadow-lg flex-fill browser-box browser-box1">
                         <div class="card-body text-center">
                             <img class="browser-image" src="./starter-code/images/logo-chrome.svg" alt="Image Logo Chrome" >
@@ -234,12 +198,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-lg-5 d-flex">
+                <div class="col-md-5 col-lg-4 mt-lg-5 d-flex">
                     <div class="card shadow-lg flex-fill browser-box browser-box2">
                         <div class="card-body text-center">
                             <img class="browser-image" src="./starter-code/images/logo-firefox.svg" alt="Imagen Logo Firefox" >
                             <h3 class="card-title">Add to Firefox</h3>
-                            <p class="card-text">Minimum version 5.5</p>
+                            <p class="card-text small">Minimum version 5.5</p>
                             
                             <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
                             
@@ -248,12 +212,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mt-lg-5 pt-lg-4 d-flex">
+                <div class="col-md-5 col-lg-4 mt-lg-5 pt-lg-4 d-flex">
                     <div class="card shadow-lg flex-fill browser-box browser-box3">
                         <div class="card-body text-center">
                             <img class="browser-image" src="./starter-code/images/logo-opera.svg" alt="Imagen Logo Opera">
                             <h3 class="card-title">Add to Opera</h3>
-                            <p class="card-text">Minimum version 4.6</p>
+                            <p class="card-text small">Minimum version 4.6</p>
                             
                             <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
                             
@@ -268,44 +232,102 @@
 
             
         </section>
-        <section class="faq-section secondary-section">
-            <h2>Frequently Asked Questions</h2>
-            <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        <section class="faq-section secondary-section  py-5 my-5">
             
-            <div class="faq-list-container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+                </div>
+                    
+            <div class="col-12 mt-4">
+                <div class="row justify-content-center">
+                    <div class="accordion col-lg-7 col-md-9" id="faqAccordion">
 
-                <details aria-label="What is Bookmark?">
-                    <summary>What is Bookmark?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
-                </details>
-                <details aria-label="How can I request a new browser">
-                    <summary>How can I request a new browser</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
-                </details>
-                <details aria-label="Is there a mobile app?">
-                    <summary>Is there a mobile app?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
-                </details>
-                <details aria-label="What about other Chromium browsers?">
-                    <summary>What about other Chromium browsers?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
-                </details>
-                
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Bookmark?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I request a new browser?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit maiores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is there a mobile app?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit mayores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What about other Chromium browsers?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore nobis sint saepe ipsam voluptate maxime natus, quo, ab voluptates impedit reprehenderit mayores molestias corporis nihil iste dolore quos in modi omnis quis, mollitia distinctio? Provident maxime aut nisi, eveniet recusandae quae?</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+
             </div>
 
-            <a class="btn btn-primary btn-primary" href="#" aria-label="Go to more info page">More info</a>
+        </div>
+        <a class="btn btn-primary btn-primary my-5 col-lg-1 col-md-2 " href="#" aria-label="Go to more info page">More info</a>
+
+            
             
         </section>
     </main>
 
 
-        <section class="contact-section secondary-section" aria-label="Subscription formulary">
-            <div class="contact-container">
+        <section class="contact-section secondary-section d-flex flex-column align-items-center py-5 mt-5 bg-primary text-white  mx-auto" aria-label="Subscription formulary">
+            <div class="container text-center col-lg-8">
                 <h3>35.000+ ALREADY JOINED</h3>
                 <h2>Stay up-to-date with what we're doing</h2>
-                <input type="email" placeholder="Enter your email adress" aria-label="Enter your email adres">
+
+                <div class="input-container row justify-content-center ">
+                    <div class="col-lg-6">
+
+                       
+                            
+                                <input type="email" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Enter your email adress" aria-label="Enter your email adress" required>
+                                
+                            
+                            
+                        </div>
+                        <button class="btn btn-primary btn-danger" type="button" aria-label="Contact us and subscript">Contact us</button>
+                    </div>
+                </div>
                 
-                <button class="btn btn-primary btn-danger" type="button" aria-label="Contact us and subscript">Contact us</button>
             </div>
 
         </section>
@@ -314,16 +336,18 @@
     
     <footer>
         
-        <div class="footer-container">
-
-            <ul class="footer-links">
-                <li><a class="footer-item footer-brand" href="#">
+        <div class="footer-container  d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between py-3 px-5  text-center">
+            <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between">
+            <ul class="footer-links  list-unstyled d-flex flex-column flex-lg-row align-items-center mb-3 mb-lg-0">
+                <li class="mb-3 mb-lg-0 me-lg-5">
+                    <a class="footer-item footer-brand" href="#">
                     <img src="./starter-code/images/logo-bookmark white.svg" alt="Web Icon" width="150px" class="footer-image">
-                </a></li>
-                <li class="footer-item">
+                    </a>
+                </li>
+                <li class="footer-item mb-2 mb-lg-0 me-lg-5">
                     <a class="footer-link" aria-label="Features" href="#">FEATURES</a>
                 </li>
-                <li class="footer-item">
+                <li class="footer-item mb-2 mb-lg-0 me-lg-5">
                     <a class="footer-link" aria-label="Pricing" href="#">PRICING</a>
                 </li>
                 <li class="footer-item">
@@ -334,8 +358,8 @@
             
         
 
-        <div class="footer-media-container">
-            <a class="footer-item footer-media-link" href="#">
+        <div class="footer-media-container d-flex">
+            <a class="footer-item footer-media-link me-3" href="#">
                 <img src="./starter-code/images/icon-facebook.svg" alt="Link Logo Facebook">
             </a>
             <a class="footer-item footer-media-link" href="#">
@@ -343,6 +367,7 @@
             </a>
 
         </div>
+    </div>
           
     </div>
         
