@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h2, .h2 {
@@ -11537,12 +11537,24 @@ textarea.form-control-lg {
 }
 
 .navbar-nav .nav-link {
-  color: black;
-  font-size: 0.9rem;
   font-weight: 400;
 }
 .navbar-nav .nav-link:hover {
   color: tomato;
+}
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    color: black;
+    font-size: 0.875rem;
+    padding: 0 1.25rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -11564,26 +11576,10 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991px) {
-  .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+  .navbar-collapse.show ~ .navbar-brand .navbar-logo-default, .navbar-collapse.show ~ a.navbar-brand img.navbar-logo-default {
+    filter: brightness(0) invert(1) !important;
   }
 }
-@media (min-width: 992px) {
-  .navbar-nav .nav-link {
-    color: black;
-    font-size: 0.875rem;
-    padding: 0 1.25rem;
-  }
-}
-.navbar-nav .nav-link {
-  font-weight: 400;
-}
-.navbar-nav .nav-link:hover {
-  color: tomato;
-}
-
 .hero-text-container h1, .hero-text-container .h1 {
   color: var(--color-black);
   font-size: clamp(2.1rem, 0.765vw + 1.85rem, 3rem);
@@ -11700,6 +11696,7 @@ footer .footer-image {
 .btn-danger,
 .btn-light {
   transition: 0.3s;
+  border: 2px solid transparent;
 }
 .btn-primary:hover,
 .btn-danger:hover,
@@ -11739,7 +11736,7 @@ footer .footer-image {
 }
 
 .tab-text-container {
-  max-width: 470px; /* Limita el ancho del párrafo */
+  max-width: 470px;
   text-align: center;
   margin: 0 auto;
   padding: 1rem 0;
@@ -11822,7 +11819,6 @@ footer .footer-image {
     margin-top: 2rem;
   }
 }
-/* El CSS para .browser-box ya está bien para su contenido interno */
 .card.browser-box {
   max-width: 250px;
   border-radius: 0.5rem;

@@ -1,33 +1,107 @@
 
 // OKK PERO REPASAR
 
- .navbar-nav .nav-link {
-    color: $color-black; 
-    font-size: 0.9rem;
-    font-weight: 400;
+
+//  .navbar-nav .nav-link {
+//     color: $color-black; 
+//     font-size: 0.9rem;
+//     font-weight: 400;
+    
+//     &:hover {
+//         color: $color-red; 
+//     }
+// }
+
+
+// .navbar-collapse {
+    
+//     @media (max-width: 991px) { 
+       
+//         background-color: rgba(37, 44, 77, 0.95); 
+        
+//         position: fixed; 
+//         inset: 0;
+//         z-index: 5;
+//         padding-top: 5rem; 
+//     }
+// }
+
+
+// .navbar-nav {
+    
+//     @media (max-width: 991px) { 
+//         width: 100%;
+//         text-align: center;
+//         padding-top: 1rem;
+//     }
+// }
+
+// .navbar-nav .nav-link {
+    
+//     @media (max-width: 991px) { 
+//         color: white !important;
+//         font-size: 1.5rem; 
+//         padding: 1rem 0;
+//     }
+    
+   
+//     @media (min-width: 992px) {
+//         color: $color-black; 
+//         font-size: 0.875rem; 
+//         padding: 0 1.25rem; 
+//     }
+    
+//     font-weight: 400; 
+    
+//     &:hover {
+//         color: $color-red; 
+//     }
+// }
+
+
+
+.navbar-nav .nav-link {
+    
+    font-weight: 400; 
     
     &:hover {
         color: $color-red; 
     }
-}
 
-
-.navbar-collapse {
     
     @media (max-width: 991px) { 
        
-        background-color: rgba(37, 44, 77, 0.95); 
+        color: white !important; 
+        font-size: 1.5rem; 
+        padding: 1rem 0;
+    }
+    
+    
+    @media (min-width: 992px) {
         
+        color: $color-black; 
+        font-size: 0.875rem; 
+        padding: 0 1.25rem; 
+    }
+}
+
+
+
+
+.navbar-collapse {
+    @media (max-width: 991px) { 
+        background-color: rgba(37, 44, 77, 0.95); 
         position: fixed; 
-        inset: 0;
+        inset: 0; 
         z-index: 5;
         padding-top: 5rem; 
     }
 }
 
 
+
+
 .navbar-nav {
-    
     @media (max-width: 991px) { 
         width: 100%;
         text-align: center;
@@ -35,28 +109,22 @@
     }
 }
 
-.navbar-nav .nav-link {
+
+
+@media (max-width: 991px) { 
     
-    @media (max-width: 991px) { 
-        color: white !important;
-        font-size: 1.5rem; 
-        padding: 1rem 0;
-    }
     
-   
-    @media (min-width: 992px) {
-        color: $color-black; 
-        font-size: 0.875rem; 
-        padding: 0 1.25rem; 
-    }
-    
-    font-weight: 400; 
-    
-    &:hover {
-        color: $color-red; 
+    .navbar-collapse.show {
+        
+        
+        & ~ .navbar-brand .navbar-logo-default,
+        & ~ a.navbar-brand img.navbar-logo-default {
+            
+            
+            filter: brightness(0) invert(1) !important; 
+        }
     }
 }
-
 
 
 
