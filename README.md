@@ -3,27 +3,29 @@ Instrucciones en [briefing](/starter-code/briefing.md)
 Bookmark Landing Page
 
 
-El objetivo de este projecto fue constuir una landing page totalmente responsive y funcional utilizando solo las tecnologías web fundamentales y SASS.
+El objetivo de este projecto fue constuir una landing page totalmente responsive y funcional utilizando Bootstrap.
 
 
 Tecnologías
 
 HTML5: Estructura semántica del contenido.
 
-Sass (SCSS): Preprocesador CSS utilizado para modularidad, variables, mixins y anidamiento.
+Sass (SCSS): Utilizado para el anidamiento de estilos y la definición de variables de diseño.
 
-CSS3: Estilos finales, diseño responsive (Mobile First) y animaciones.
+Bootstrap 5: Framework CSS principal para el layout y los componentes.
 
-JavaScript (Vanilla JS): Lógica de interacción para la navegación móvil (hamburguesa) y la funcionalidad de las pestañas (tabs).
+JavaScript (Bootstrap JS): Requerido para la funcionalidad del navbar colapsable y las pestañas (tabs).
 
 
 Funcionalidades
 
 Diseño Totalmente Responsive: Se adapta correctamente a dispositivos móviles, tablets y escritorios.
 
-Navegación Interactiva: Implementación de un menú de hamburguesa que se transforma usando variables CSS y la pseudoclase :has().
+Sistema de Pestañas (Tabs) Responsivo: Uso avanzado de la navegación por pestañas de Bootstrap, que se adapta para apilarse en móvil y mostrarse horizontalmente en escritorio.
 
-Pestañas Dinámicas: La sección de "Features" utiliza JavaScript Vanilla para cambiar el contenido sin recargar la página.
+Grid Layout con Flexbox: Uso intensivo de las utilidades de Flexbox (como d-flex, justify-content-between, align-items-center) y el sistema de Grid de Bootstrap para construir el layout de las secciones.
+
+SCSS Mínimo: Se priorizó el uso de clases de utilidad de Bootstrap, dejando el SCSS solo para estilos visuales esenciales (colores, fuentes, sombras y la lógica de layout compleja del overlay).
 
 Accesibilidad (ARIA): Se han incluido atributos ARIA para mejorar la experiencia de los usuarios con lectores de pantalla.
 
@@ -32,7 +34,7 @@ Para ver y probar el proyecto:
 
 1. Clona el repositorio en tu máquina.
 
-2. Compila Sass (si haces cambios): Si modificas algo en la carpeta scss/, recuerda usar un compilador para generar el css/style.css final.
+2. Instalar dependencias (si usas un entorno de desarrollo SCSS/NPM)
 
 3. Abre en el navegador: Simplemente haz doble clic en el archivo index.html para abrir la página.
 
