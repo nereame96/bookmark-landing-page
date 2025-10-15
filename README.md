@@ -1,48 +1,38 @@
 Instrucciones en [briefing](/starter-code/briefing.md)
 
 Bookmark Landing Page
+The objective of this project was to build a fully responsive and functional landing page using Bootstrap.
 
+Technologies
+HTML5: Semantic structure of the content.
 
-El objetivo de este projecto fue constuir una landing page totalmente responsive y funcional utilizando Bootstrap.
+Sass (SCSS): Used for style nesting and the definition of design variables.
 
+Bootstrap 5: Primary CSS framework used for layout and components.
 
-Tecnologías
+JavaScript (Bootstrap JS): Required for the functionality of the collapsible navbar and the tabs.
 
-HTML5: Estructura semántica del contenido.
+Features
+Fully Responsive Design: Adapts correctly to mobile devices, tablets, and desktops.
 
-Sass (SCSS): Utilizado para el anidamiento de estilos y la definición de variables de diseño.
+Responsive Tabs System: Advanced use of Bootstrap's tab navigation, which adapts to stack vertically on mobile and display horizontally on desktop.
 
-Bootstrap 5: Framework CSS principal para el layout y los componentes.
+Grid Layout with Flexbox: Intensive use of Bootstrap's Flexbox utilities (such as d-flex, justify-content-between, align-items-center) and the Grid system to construct the section layouts.
 
-JavaScript (Bootstrap JS): Requerido para la funcionalidad del navbar colapsable y las pestañas (tabs).
+Minimal SCSS: Priority was given to using Bootstrap utility classes, reserving SCSS only for essential visual styles (colors, fonts, shadows, and the complex layout logic for the overlay).
 
+Accessibility (ARIA): ARIA attributes have been included to enhance the experience for users with screen readers.
 
-Funcionalidades
+Usage and Viewing
+To view and test the project:
 
-Diseño Totalmente Responsive: Se adapta correctamente a dispositivos móviles, tablets y escritorios.
+Clone the repository onto your machine.
 
-Sistema de Pestañas (Tabs) Responsivo: Uso avanzado de la navegación por pestañas de Bootstrap, que se adapta para apilarse en móvil y mostrarse horizontalmente en escritorio.
+Install dependencies (if you are using an SCSS/NPM development environment).
 
-Grid Layout con Flexbox: Uso intensivo de las utilidades de Flexbox (como d-flex, justify-content-between, align-items-center) y el sistema de Grid de Bootstrap para construir el layout de las secciones.
+Open in the browser: Simply double-click the index.html file to open the page.
 
-SCSS Mínimo: Se priorizó el uso de clases de utilidad de Bootstrap, dejando el SCSS solo para estilos visuales esenciales (colores, fuentes, sombras y la lógica de layout compleja del overlay).
-
-Accesibilidad (ARIA): Se han incluido atributos ARIA para mejorar la experiencia de los usuarios con lectores de pantalla.
-
-Uso y Visualización
-Para ver y probar el proyecto:
-
-1. Clona el repositorio en tu máquina.
-
-2. Instalar dependencias (si usas un entorno de desarrollo SCSS/NPM)
-
-3. Abre en el navegador: Simplemente haz doble clic en el archivo index.html para abrir la página.
-
-
-
-
-Autor
-
+Author
 Nerea Medina Carrasco
 
-GitHub : https://github.com/nereame96
+GitHub: https://github.com/nereame96
