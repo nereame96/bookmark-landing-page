@@ -1,26 +1,20 @@
-// ===========================================
-// FASE 1: NÚCLEO DE BOOTSTRAP (CONFIGURACIÓN)
-// ===========================================
+// scss/main.scss (ORDEN CORREGIDO)
 
-// 1. Funciones y Mixins (Bootstrap primero)
-@import "../node_modules/bootstrap/scss/functions";
+// 1. CONFIGURACIÓN (Necesario para que el resto de Bootstrap funcione)
+@import "../node_modules/bootstrap/scss/functions"; 
 @import "../node_modules/bootstrap/scss/mixins";
 
-// 2. TUS Variables (Importa tus variables aquí para sobreescribir las de Bootstrap)
-@import 'base/variables'; 
+// 2. PERSONALIZACIÓN DE VARIABLES Y MAPAS (Tus variables primero, luego las de Bootstrap)
+@import 'base/variables';        // <-- TUS VARIABLES
+@import "../node_modules/bootstrap/scss/variables"; // <-- LEYENDO TUS VARIABLES
+@import "../node_modules/bootstrap/scss/maps";      // <-- LEYENDO TUS MAPAS
 
-// 3. Variables de Bootstrap (Usa tus variables personalizadas)
-@import "../node_modules/bootstrap/scss/variables"; 
-
-// ===========================================
-// FASE 2: BOOTSTRAP SELECTIVO (COMPONENTES)
-// ===========================================
-
-// 4. Componentes Fundamentales
+// 3. BOOTSTRAP CORE (Estilos base y utilidades)
+@import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot"; 
 @import "../node_modules/bootstrap/scss/utilities";
 
-// 5. Componentes de Layout y Estructura (Importación SELECTIVA)
+// 4. COMPONENTES DE BOOTSTRAP
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/type"; 
@@ -31,21 +25,14 @@
 @import "../node_modules/bootstrap/scss/forms";
 
 
-// ===========================================
-// FASE 3: ESTILOS PERSONALIZADOS DEL PROYECTO
-// ESTO VA SIEMPRE AL FINAL
-// ===========================================
-
-// 6. BASE (Tus estilos base deben ir después de Reboot de Bootstrap)
+// 5. TUS ESTILOS BASE Y CUSTOM (Sobrescribiendo o añadiendo estilos propios)
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 
-// 7. LAYOUT (Estructura)
 @import 'layout/main-container';
 @import 'layout/secondary-section';
 
-// 8. SECCIONES (Grandes bloques)
 @import 'sections/nav';
 @import 'sections/hero';
 @import 'sections/features';
@@ -53,7 +40,5 @@
 @import 'sections/contact';
 @import 'sections/footer';
 
-// 9. COMPONENTES (Pequeños bloques reutilizables)
 @import 'components/buttons';
 @import 'components/tabs';
-@import 'components/browser-box';

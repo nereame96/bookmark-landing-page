@@ -60,89 +60,94 @@
 
 
 
-.navbar-nav .nav-link {
+
+
+
+//eliminado
+
+// .navbar-nav .nav-link {
     
-    font-weight: 400; 
+//     font-weight: 400; 
     
-    &:hover {
-        color: $color-red; 
-    }
+//     &:hover {
+//         color: $color-red; 
+//     }
 
     
-    @media (max-width: 991px) { 
+//     @media (max-width: 991px) { 
        
-        color: white !important; 
-        font-size: 1.5rem; 
-        padding: 1rem 0;
-    }
+//         color: white !important; 
+//         font-size: 1.5rem; 
+//         padding: 1rem 0;
+//     }
     
     
-    @media (min-width: 992px) {
+//     @media (min-width: 992px) {
         
-        color: $color-black; 
-        font-size: 0.875rem; 
-        padding: 0 1.25rem; 
-    }
-}
+//         color: $color-black; 
+//         font-size: 0.875rem; 
+//         padding: 0 1.25rem; 
+//     }
+// }
 
 
 
 
-.navbar-collapse {
-    @media (max-width: 991px) { 
-        background-color: rgba(37, 44, 77, 0.95); 
-        position: fixed; 
-        inset: 0; 
-        z-index: 5;
-        padding-top: 5rem; 
-    }
-}
+// .navbar-collapse {
+//     @media (max-width: 991px) { 
+//         background-color: rgba(37, 44, 77, 0.95); 
+//         position: fixed; 
+//         inset: 0; 
+//         z-index: 5;
+//         padding-top: 5rem; 
+//     }
+// }
 
 
 
 
-.navbar-nav {
-    @media (max-width: 991px) { 
-        width: 100%;
-        text-align: center;
-        padding-top: 1rem;
-    }
-}
+// .navbar-nav {
+//     @media (max-width: 991px) { 
+//         width: 100%;
+//         text-align: center;
+//         padding-top: 1rem;
+//     }
+// }
 
-
-
-@media (max-width: 991px) { 
-    
-    
-    .navbar-collapse.show {
-        
-        
-        & ~ .navbar-brand .navbar-logo-default,
-        & ~ a.navbar-brand img.navbar-logo-default {
-            
-            
-            filter: brightness(0) invert(1) !important; 
-        }
-    }
-}
 
 
 // @media (max-width: 991px) { 
     
-//     // Selector que busca en el mismo NAV:
-//     .navbar:has(.navbar-collapse.show) {
+    
+//     .navbar-collapse.show {
         
-//         // Aplica el filtro (cambio de color) al logo
-//         .navbar-brand .navbar-logo-default {
+        
+//         & ~ .navbar-brand .navbar-logo-default,
+//         & ~ a.navbar-brand img.navbar-logo-default {
+            
+            
 //             filter: brightness(0) invert(1) !important; 
-//         }
-        
-//         // Estilo para transformar el toggler en una "X" (si lo necesitas)
-//         .navbar-toggler[aria-expanded="true"] {
-//             // Aquí irían los estilos para cambiar a la "X"
 //         }
 //     }
 // }
+
+
+// // @media (max-width: 991px) { 
+    
+// //     // Selector que busca en el mismo NAV:
+// //     .navbar:has(.navbar-collapse.show) {
+        
+// //         // Aplica el filtro (cambio de color) al logo
+// //         .navbar-brand .navbar-logo-default {
+// //             filter: brightness(0) invert(1) !important; 
+// //         }
+        
+// //         // Estilo para transformar el toggler en una "X" (si lo necesitas)
+// //         .navbar-toggler[aria-expanded="true"] {
+// //             // Aquí irían los estilos para cambiar a la "X"
+// //         }
+// //     }
+// // }
 
 
 

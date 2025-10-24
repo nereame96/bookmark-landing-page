@@ -17,10 +17,10 @@
         <!-- Barra navegacion -->
         <nav class="navbar navbar-expand-lg">
 
-            <div class="container my-2 px-5" >
+            <div class="container my-2 px-5 px-sm-5" >
 
-              <a class="navbar-brand" href="#">
-                  <img src="./starter-code/images/logo-bookmark.svg" alt="Web Icon" width="150px">
+              <a class="navbar-brand py-3" href="#">
+                  <img src="./starter-code/images/logo-bookmark.svg" alt="Bookmark logo" class="w-auto" height="30">
               </a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,15 +30,15 @@
               <div class="collapse navbar-collapse w-100" id="navbarNav">
  
                   
-                  <ul class="navbar-nav ms-auto align-items-center  flex-column flex-lg-row ">
+                  <ul class="navbar-nav ms-auto align-items-center  flex-column flex-lg-row justify-content-center ">
                       <li class="nav-item m-2">
-                          <a class="nav-link" aria-label="Features" href="#">FEATURES</a>
+                          <a class="nav-link text-uppercase fw-bold fs-6 mx-3" aria-label="Features" href="#">FEATURES</a>
                         </li>
                         <li class="nav-item m-2">
-                            <a class="nav-link" aria-label="Pricing" href="#">PRICING</a>
+                            <a class="nav-link text-uppercase fw-bold fs-6 mx-3" aria-label="Pricing" href="#">PRICING</a>
                         </li>
                         <li class="nav-item m-2">
-                            <a class="nav-link" aria-label="Contact" href="#">CONTACT</a>
+                            <a class="nav-link text-uppercase fw-bold fs-6 mx-3" aria-label="Contact" href="#">CONTACT</a>
                         </li>
                         <li class="nav-item " >
                             
@@ -58,11 +58,11 @@
                 <div class="row align-items-center py-5 flex-column-reverse flex-lg-row">
 
                     <div class="hero-text-container secondary-text-container text-center text-lg-start col-lg-5 pe-lg-5">
-                        <h1>A Simple Bookmark Manager</h1>
+                        <h1 class="my-5">A Simple Bookmark Manager</h1>
                         <p>A clean and simple interface to organize your websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                         <div class="hero-links">
-                            <a class="btn btn-primary btn-primary" href="#" aria-label="Download Chrome extension" >Get it on Chrome</a>
-                            <a class="btn btn-primary btn-light" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
+                            <a class="btn btn-primary" href="#" aria-label="Download Chrome extension" >Get it on Chrome</a>
+                            <a class="btn btn-light" href="#"aria-label="Download Firefox extension" >Get it on Firefox</a>
                         </div>
                     </div>
                     <div class="hero-image-container col-lg-7 mt-6 mt-lg-0 position-relative overflow-hidden">
@@ -110,10 +110,10 @@
             
                         <div class="col-lg-6 mt-5 mt-lg-0">
                             <div class="tab-text-container">
-                                <h2>Bookmark in one click</h2>
+                                <h2 >Bookmark in one click</h2>
                                 <p >Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                                <div class="text-center text-lg-start mt-4">
-                                    <a class="btn btn-primary btn-primary" href="#" aria-label="More info about Bookmark in one click" >More info</a>
+                                <div class="text-center text-lg-start mt-4 ps-2">
+                                    <a class="btn btn-primary" href="#" aria-label="More info about Bookmark in one click" >More info</a>
 
                                 </div>
                                     
@@ -137,8 +137,8 @@
                             <div class="tab-text-container">
                                 <h2>Intelligent search</h2>
                                 <p>Our powerful search feature will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.</p>
-                                <div class="text-center text-lg-start mt-4">
-                                    <a class="btn btn-primary btn-primary" href="#" aria-label="More info about smart Searching" >More info</a>
+                                <div class="text-center text-lg-start mt-4 ps-2">
+                                    <a class="btn btn-primary" href="#" aria-label="More info about smart Searching" >More info</a>
 
                                 </div>
                             </div>
@@ -164,7 +164,10 @@
                             <div class="tab-text-container">
                                 <h2>Share your bookmarks</h2>
                                 <p>Easy share your bookmarks and collections with other. Create a shareable link that you can send at the click of a button.</p>
-                                <a class="btn btn-primary btn-primary" href="#" aria-label="Learn more about sharing bookmarks" >More info</a>
+                                <div class="text-center text-lg-start mt-4 ps-2">
+                                    <a class="btn btn-primary" href="#" aria-label="Learn more about sharing bookmarks" >More info</a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,52 +184,53 @@
                 <h2>Download the extension</h2>
                 <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
+            <div class="col-lg-10 mx-auto">
+                <div class="row justify-content-center g-3 px-md-2 align-items-start ">
+                    <div class="col-9 col-sm-7 mx-auto col-md-5 col-lg-4 d-flex gx-sm-0">
+                        <div class="card shadow-lg flex-fill browser-box browser-box1 ">
+                            <div class="card-body text-center">
+                                <img class="browser-image" src="./starter-code/images/logo-chrome.svg" alt="Image Logo Chrome" >
+                                <h3 class="card-title">Add to Chrome</h3>
+                                <p class="card-text">Minimum version 6.2</p>
 
-            <div class="row justify-content-center g-3 px-md-2 align-items-start flex-column flex-lg-row">
-                <div class="col-md-5 col-lg-4 d-flex">
-                    <div class="card shadow-lg flex-fill browser-box browser-box1">
-                        <div class="card-body text-center">
-                            <img class="browser-image" src="./starter-code/images/logo-chrome.svg" alt="Image Logo Chrome" >
-                            <h3 class="card-title">Add to Chrome</h3>
-                            <p class="card-text">Minimum version 6.2</p>
+                                <img class="dots-image car-img-center " src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                                
+                                <a class=" btn btn-primary btn-primary" href="#" aria-label="Add and Install for Chrome">Add & Install Extension </a>
 
-                            <img class="dots-image car-img-center" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                            
-                            <a class=" btn btn-primary btn-primary" href="#" aria-label="Add and Install for Chrome">Add & Install Extension </a>
-
-                            
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 col-lg-4 mt-lg-5 d-flex">
-                    <div class="card shadow-lg flex-fill browser-box browser-box2">
-                        <div class="card-body text-center">
-                            <img class="browser-image" src="./starter-code/images/logo-firefox.svg" alt="Imagen Logo Firefox" >
-                            <h3 class="card-title">Add to Firefox</h3>
-                            <p class="card-text small">Minimum version 5.5</p>
+                    <div class="col-9 col-sm-7 mx-auto col-md-5 col-lg-4 mt-lg-5 d-flex gx-sm-0">
+                        <div class="card shadow-lg flex-fill browser-box browser-box2">
+                            <div class="card-body text-center">
+                                <img class="browser-image" src="./starter-code/images/logo-firefox.svg" alt="Imagen Logo Firefox" >
+                                <h3 class="card-title">Add to Firefox</h3>
+                                <p class="card-text small">Minimum version 5.5</p>
+                                
+                                <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                                
+                                <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Firefox">Add & Install Extension </a>
                             
-                            <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                            
-                            <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Firefox">Add & Install Extension </a>
-                        
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 col-lg-4 mt-lg-5 pt-lg-4 d-flex">
-                    <div class="card shadow-lg flex-fill browser-box browser-box3">
-                        <div class="card-body text-center">
-                            <img class="browser-image" src="./starter-code/images/logo-opera.svg" alt="Imagen Logo Opera">
-                            <h3 class="card-title">Add to Opera</h3>
-                            <p class="card-text small">Minimum version 4.6</p>
+                    <div class="col-9 col-sm-7 mx-auto col-md-5 col-lg-4 mt-lg-5 pt-lg-4 d-flex gx-sm-0">
+                        <div class="card shadow-lg flex-fill browser-box browser-box3">
+                            <div class="card-body text-center">
+                                <img class="browser-image" src="./starter-code/images/logo-opera.svg" alt="Imagen Logo Opera">
+                                <h3 class="card-title">Add to Opera</h3>
+                                <p class="card-text small">Minimum version 4.6</p>
+                                
+                                <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
+                                
+                                <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Opera">Add & Install Extension </a>
                             
-                            <img class="dots-image" src="./starter-code/images/bg-dots.svg" alt="Period bar to separate content" >
-                            
-                            <a class="btn btn-primary btn-primary" href="#" aria-label="Add and Install for Opera">Add & Install Extension </a>
-                        
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
+        </div>
             
             
 
@@ -310,13 +314,13 @@
 
 
         <section class="contact-section secondary-section d-flex flex-column align-items-center py-5 mt-5 bg-primary text-white  mx-auto" aria-label="Subscription formulary">
-            <di class="container text-center col-lg-8">
+            <div class="container text-center col-lg-8">
                 <h3>35.000+ ALREADY JOINED</h3>
                 <h2>Stay up-to-date with what we're doing</h2>
 
-                <div class="input-container row justify-content-center g-3 mt-4 ">
+                <div class=" row justify-content-center g-3 mt-4 ">
                     <div class="col-12 col-md-4">
-                        <input type="email" class="form-control "  placeholder="Enter your email adress" aria-label="Enter your email adress" required>
+                        <input type="email" class="form-control border-0 text-star lh-base pe-5 fs-5 font-sans-serif"  placeholder="Enter your email adress" aria-label="Enter your email adress" required>
                         </div>
                         <div class="col-12 col-md-auto">
                             <button class="btn btn-primary btn-danger" type="button" aria-label="Contact us and subscript">Contact us</button>
@@ -348,7 +352,7 @@
                     <a class="footer-link" aria-label="Pricing" href="#">PRICING</a>
                 </li>
                 <li class="footer-item">
-                    <a class="nafooter-link" aria-label="Contact" href="#">CONTACT</a>
+                    <a class="footer-link" aria-label="Contact" href="#">CONTACT</a>
                 </li>
                 
             </ul>
@@ -371,8 +375,8 @@
     </footer>
     
 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
    
-    <script src="script.js"></script> 
 
 </body>
 
