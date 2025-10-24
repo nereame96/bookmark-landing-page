@@ -127,5 +127,22 @@
 }
 
 
+// @media (max-width: 991px) { 
+    
+//     // Selector que busca en el mismo NAV:
+//     .navbar:has(.navbar-collapse.show) {
+        
+//         // Aplica el filtro (cambio de color) al logo
+//         .navbar-brand .navbar-logo-default {
+//             filter: brightness(0) invert(1) !important; 
+//         }
+        
+//         // Estilo para transformar el toggler en una "X" (si lo necesitas)
+//         .navbar-toggler[aria-expanded="true"] {
+//             // Aquí irían los estilos para cambiar a la "X"
+//         }
+//     }
+// }
+
 
 
