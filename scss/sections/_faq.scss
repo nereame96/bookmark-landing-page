@@ -1,32 +1,7 @@
 
 // OKK PERO REPASAR
 
-.accordion-item {
-    
-    border: none;
-    border-bottom: 1px solid #ddd;
 
-
-}
-
-.accordion-body {
-    text-align: left;
-}
-
-.accordion-button {
-    
-    font-weight: 500;
-    color: $color-black; 
-    background-color: white; 
-    
-    &:focus {
-        box-shadow: none; 
-    }
-    
-    &:hover {
-        color: $color-red; 
-    }
-}
 
 .accordion-button:not(.collapsed) {
     background-color: transparent;

@@ -1,15 +1,15 @@
-// scss/main.scss
 
-// 1. CONFIGURACIÓN (Funciones y mixins primero)
+
+// 1. CONFIGURAtion
 @import "../node_modules/bootstrap/scss/functions"; 
 @import "../node_modules/bootstrap/scss/mixins";
 
-// 2. PERSONALIZACIÓN DE VARIABLES
+// 2. CUSTOM VARIABLES
 @import 'base/variables';        
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/maps";
 
-// 3. BOOTSTRAP CORE (Base del framework)
+// 3. BOOTSTRAP CORE 
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot"; 
 @import "../node_modules/bootstrap/scss/type";
@@ -17,42 +17,24 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-// 4. COMPONENTES Y HELPERS
+// 4. COMPONENTS & HELPERS
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/utilities";
-
-// 5. COMPONENTES ESPECÍFICOS QUE USAS
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/forms";
-
-// 6. TABS (Para la sección Features)
 @import "../node_modules/bootstrap/scss/transitions";
-
-// 7. ACCORDION (Necesita transitions antes)
 @import "../node_modules/bootstrap/scss/accordion";
-
-// 8. OTROS COMPONENTES
 @import "../node_modules/bootstrap/scss/dropdown";
-
-// 9. UTILITIES API (Debe ir al final de Bootstrap)
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-// 10. TUS ESTILOS PERSONALIZADOS (Siempre al final)
-@import 'base/reset';
+// 10. CUSTOM STYLES
+
 @import 'base/base';
-@import 'base/typography';
-
-@import 'layout/main-container';
-
 @import 'sections/nav';
 @import 'sections/hero';
 @import 'sections/features';
 @import 'sections/faq';
-@import 'sections/contact';
-@import 'sections/footer';
-
 @import 'components/buttons';
-@import 'components/tabs';

@@ -17,7 +17,19 @@ $theme-colors: (
   "secondary":  $color-black,
   "danger":     $color-red,
   "light":      $color-button-grey,
+  "dark":      $color-dark-blue,
 );
+
+
+//Hover class customized
+
+.text-danger-hover {
+  transition: color 0.3s ease;
+  
+  &:hover {
+      color: $color-red !important; 
+  }
+}
 
 
 
