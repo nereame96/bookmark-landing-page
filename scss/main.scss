@@ -1,37 +1,51 @@
-// scss/main.scss (ORDEN CORREGIDO)
+// scss/main.scss
 
-// 1. CONFIGURACIÓN (Necesario para que el resto de Bootstrap funcione)
+// 1. CONFIGURACIÓN (Funciones y mixins primero)
 @import "../node_modules/bootstrap/scss/functions"; 
 @import "../node_modules/bootstrap/scss/mixins";
 
-// 2. PERSONALIZACIÓN DE VARIABLES Y MAPAS (Tus variables primero, luego las de Bootstrap)
-@import 'base/variables';        // <-- TUS VARIABLES
-@import "../node_modules/bootstrap/scss/variables"; // <-- LEYENDO TUS VARIABLES
-@import "../node_modules/bootstrap/scss/maps";      // <-- LEYENDO TUS MAPAS
+// 2. PERSONALIZACIÓN DE VARIABLES
+@import 'base/variables';        
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
 
-// 3. BOOTSTRAP CORE (Estilos base y utilidades)
+// 3. BOOTSTRAP CORE (Base del framework)
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot"; 
-@import "../node_modules/bootstrap/scss/utilities";
-
-// 4. COMPONENTES DE BOOTSTRAP
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/type"; 
+
+// 4. COMPONENTES Y HELPERS
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// 5. COMPONENTES ESPECÍFICOS QUE USAS
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/forms";
 
+// 6. TABS (Para la sección Features)
+@import "../node_modules/bootstrap/scss/transitions";
 
-// 5. TUS ESTILOS BASE Y CUSTOM (Sobrescribiendo o añadiendo estilos propios)
+// 7. ACCORDION (Necesita transitions antes)
+@import "../node_modules/bootstrap/scss/accordion";
+
+// 8. OTROS COMPONENTES
+@import "../node_modules/bootstrap/scss/dropdown";
+
+// 9. UTILITIES API (Debe ir al final de Bootstrap)
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 10. TUS ESTILOS PERSONALIZADOS (Siempre al final)
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 
 @import 'layout/main-container';
-@import 'layout/secondary-section';
 
 @import 'sections/nav';
 @import 'sections/hero';

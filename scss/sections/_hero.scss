@@ -1,20 +1,7 @@
 
 // okk
 
-    .hero-text-container {
-    
-        h1 {
-            color: var(--color-black);
-            font-size: clamp(2.1rem, 0.765vw + 1.85rem, 3rem);
-            margin: 3rem 0;
-        }
-
-        .hero-links {
-            
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-    }
+  
 
     .hero-image-container {
     
@@ -23,8 +10,8 @@
         .hero-blue-shape {  
             position: absolute; 
             background-color: $color-blue;
-            width: 85%; 
-            height: 85%; 
+            width: 55%; 
+            height: 45%; 
             max-height: 400px;
             bottom: 0; 
             right: 0; 
